@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scola=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <link rel="shortcut icon" type="image/x-ico" href="./img/favicon-.png" />
+    <link rel="stylesheet" href="pagina.css" />
+    <title>Horas da Noite</title>
+  </head>
+  <body>
+    <div id="container3">
+      <header>
+        <h1>Horas da Noite</h1>
+      </header>
+      <section>
+        <div class="horario">
+          <script>
+            var hota = new Date();
+            var agora = hota.getHours();
+            document.write(`Agora são ${agora} horas.`);
+            if (agora == 00) {
+              document.location = "./index.html";
+            }
+          </script>
+        </div>
+        <div>
+          <img
+            src="./img/noite.jpeg"
+            style="width: 230px; height: 230px; border-radius: 100%"
+          />
+        </div>
+      </section>
+      <footer>
+        <p>&copy;Lorem ipsum dolor sit amet consectetur.</p>
+      </footer>
+      <script></script>
+    </div>
+  </body>
+</html>
